@@ -1,12 +1,12 @@
 # body-fat-percentage-predictor
-Body Fat percentage predictor using linear regression gradient descent with feature engineering.
-This is a revision of my last academic project I did in university. The previous project (not uploaded to github, will do soon) used a lasso regression gradient descent to train the models and reduce the number of features. This revision uses a linear regression gradient descent instead and I reduced the features via feature engineering. Both projects did not utilize libraries for machine learning. I built them from scratch.
-Another approach I did in another python notebook is by Ordinary Least Squares: by scratch and by using sklearn.
-Using OLS however yielded a higher cost than the gradient descent.
+Body Fat percentage predictor using linear regression gradient descent with feature engineering.  
+This is a revision of my last academic project I did in university. The previous project (not uploaded to github, will do soon) used a lasso regression gradient descent to train the models and reduce the number of features. This revision uses a linear regression batch gradient descent instead and I reduced the features via feature engineering. Both projects did not utilize libraries for machine learning. I built them from scratch.  
+Another approach I did in another python notebook is by Ordinary Least Squares: by scratch and by using sklearn. Using OLS however yielded a higher cost than the gradient descent.  
+- pending tasks to do at the bottom  
 
 ## Data cleaning and preprocessing
 - visualized each features
-- removed outliers with winsorization in varying percentiles. as much as possible, i did not want to drop data since there are only ~250 data
+- removed outliers with winsorization in varying percentiles. as much as possible, i did not want to drop data since there are only ~250 data  
 
 ### Age has no outliers
 ![image](https://github.com/arceldizon28/body-fat-percentage-predictor/assets/148745972/374dda18-361e-4d7a-8c8b-721be186e2cf)
@@ -66,5 +66,10 @@ Using OLS however yielded a higher cost than the gradient descent.
 - implemented from scratch and from sklearn. both yielded the same result
 - however, OLS approach yielded a higher RMSE than the gradient descent model at ~18 units
 
+## Result: comparison of gradient descent and OLS
 ![image](https://github.com/arceldizon28/body-fat-percentage-predictor/assets/148745972/ed06f2e7-3c9a-4a63-86a9-563f754a71ee)  
-(A lower RMSE and MSE indicates a prediction closer to actual value)
+(A lower RMSE and MSE indicates a prediction closer to actual value)  
+Linear regression trained with gradient descent  
+
+## To do:
+- try a stochastic gradient descent approach

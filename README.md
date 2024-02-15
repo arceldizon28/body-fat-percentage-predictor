@@ -69,7 +69,10 @@ Another approach I did in another python notebook is by Ordinary Least Squares: 
 ## Result: comparison of gradient descent and OLS
 ![image](https://github.com/arceldizon28/body-fat-percentage-predictor/assets/148745972/ed06f2e7-3c9a-4a63-86a9-563f754a71ee)  
 (A lower RMSE and MSE indicates a prediction closer to actual value)  
-Linear regression trained with batch gradient descent has less average errors than the one trained with OLS. As I have said previously, ~10 units is a huge gap in this context, as 10% of body fat can be the difference between a shredded athlete and an average person.
+Linear regression trained with batch gradient descent has less average errors than the one trained with OLS. As I have said previously, ~10 units is a huge gap in this context, as 10% of body fat can be the difference between a shredded athlete and an average person, as can be seen in a visualization below (see 10% and 20%):  
+![image](https://github.com/arceldizon28/body-fat-percentage-predictor/assets/148745972/566d5940-a1f9-43c9-a081-7c5180cb88d4)
+image from ultimateperformance.com  
+
 
 ## To do:
 - try a stochastic gradient descent approach

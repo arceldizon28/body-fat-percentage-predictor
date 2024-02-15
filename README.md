@@ -62,6 +62,9 @@ Using OLS however yielded a higher cost than the gradient descent.
 - best model has an MSE of 80.99 and RMSE of 8.99
 - This is a massive difference since ~10 units of body fat percentage can already be the difference between a shredded athlete and an average person.
 
-## Model training: OLS
+## Model training: Ordinary Least Squares
 - implemented from scratch and from sklearn. both yielded the same result
 - however, OLS approach yielded a higher RMSE than the gradient descent model at ~18 units
+
+![image](https://github.com/arceldizon28/body-fat-percentage-predictor/assets/148745972/ed06f2e7-3c9a-4a63-86a9-563f754a71ee)  
+(A lower RMSE and MSE indicates a prediction closer to actual value)

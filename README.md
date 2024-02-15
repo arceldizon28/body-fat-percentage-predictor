@@ -2,9 +2,27 @@
 Body Fat percentage predictor using linear regression gradient descent with feature engineering.  
 This is a revision of my last academic project I did in university. The previous project (not uploaded to github, will do soon) used a lasso regression gradient descent to train the models and reduce the number of features. This revision uses a linear regression batch gradient descent instead and I reduced the features via feature engineering. Both projects did not utilize libraries for machine learning. I built them from scratch.  
 Another approach I did in another python notebook is by Ordinary Least Squares: by scratch and by using sklearn. Using OLS however yielded a higher cost than the gradient descent.  
-- pending tasks to do at the bottom  
+- pending tasks to do at the bottom
+
+## About the dataset
+Data is not mine. Data is retrieved from kaggle.  
+Quoted from the kaggle page:  
+  "  
+  The data were generously supplied by Dr. A. Garth Fisher who gave permission to freely distribute the data and use for non-commercial purposes.
+  
+  Roger W. Johnson
+  Department of Mathematics & Computer Science
+  South Dakota School of Mines & Technology
+  501 East St. Joseph Street
+  Rapid City, SD 57701
+  
+  email address: rwjohnso@silver.sdsmt.edu
+  web address: http://silver.sdsmt.edu/~rwjohnso  
+  "  
+Data will be used for academic purposes only.
 
 ## Data cleaning and preprocessing
+- excluded the density feature since I am not planning to use density as a feature. Getting the density of a person's body requires for the person to jump into water to have their density measured. This is not easily accessible anytime.
 - visualized each features
 - removed outliers with winsorization in varying percentiles. as much as possible, i did not want to drop data since there are only ~250 data  
 

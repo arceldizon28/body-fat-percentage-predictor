@@ -1,6 +1,8 @@
 # body-fat-percentage-predictor
-Body FAt percentage predictor using linear regression gradient descent with feature engineering.
+Body Fat percentage predictor using linear regression gradient descent with feature engineering.
 This is a revision of my last academic project I did in university. The previous project (not uploaded to github, will do soon) used a lasso regression gradient descent to train the models and reduce the number of features. This revision uses a linear regression gradient descent instead and I reduced the features via feature engineering. Both projects did not utilize libraries for machine learning. I built them from scratch.
+Another approach I did in another python notebook is by Ordinary Least Squares: by scratch and by using sklearn.
+Using OLS however yielded a higher cost than the gradient descent.
 
 ## Data cleaning and preprocessing
 - visualized each features
@@ -53,12 +55,13 @@ This is a revision of my last academic project I did in university. The previous
   - combined features: Chest-Abdomen, Hip-Thigh, Neck-Wrist, Knee-Ankle, Biceps-Forearm (ratio)
   - Age is left unengineered
  
-## Model training
-- used linear regression gradient descent to train the model.
+## Model training: Gradient descent
 - did hyperparameter value experimentations with varying learning rates and epochs
 - added an early-stop function to prevent overshooting and avoid wasting training time
 - best model: m(8.56120965, 9.40495377, 7.21295553, 11.16557975, 13.408664, 10.32275786, 9.17106151), b = -18.468214630944036.
-
-## Model testing
 - best model has an MSE of 80.99 and RMSE of 8.99
 - This is a massive difference since ~10 units of body fat percentage can already be the difference between a shredded athlete and an average person.
+
+## Model training: OLS
+- implemented from scratch and from sklearn. both yielded the same result
+- however, OLS approach yielded a higher RMSE than the gradient descent model at ~18 units
